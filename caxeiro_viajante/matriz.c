@@ -20,6 +20,7 @@ MATRIZ *criar_matriz(int qtd_linhas_e_colunas){
             for(int j = 0; j < i; j++)
                 free(m->matriz[j]);
             free(m->matriz);
+            free(m);
             return NULL;
         }
     }
